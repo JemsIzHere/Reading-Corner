@@ -1,0 +1,249 @@
+:root{
+    --ylw: #DF984E;
+    --wht: #F6F0E2;
+    --brwn: #A2583A;
+    --blu: #6A8AA4;
+    --pnk: #E3B7B1;
+    --drkylw: #c88846;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--wht);
+    font-family: "Andika", sans-serif;
+}
+
+/* Nav */
+
+nav{
+    background-color: var(--ylw);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+
+}
+
+.logo{
+    height: 80px;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+nav ul{
+    margin-left: 30%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:var(--wht);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a.hid{
+    display: none;
+}
+a.na,a:hover{
+    background: var(--brwn);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--wht);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* Banner */
+
+.bannercont{
+    width: 100vw; 
+    height: 400px;
+    margin-bottom: 2%;
+}
+
+.bannercont img{
+    width: 100%; 
+    max-height: 100%;
+    object-fit: cover; 
+
+}
+
+
+/* Main */
+
+.main{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main .bookgrade{
+    margin-bottom: 10%;
+    margin-right: 5%;
+}
+
+.main .bookgrade .books {
+    display: flex;
+    flex-direction: row;
+}
+
+.main .bookgrade h3{
+    margin-bottom: 2%;
+}
+
+.bookgrade .books .bookcont {
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 5%;
+
+}
+
+.bookgrade .books .bookcont .bookact {
+    width: 250px; 
+    height: 300px;
+    margin-bottom: 2%;
+}
+
+.bookgrade .books .bookcont .bookact img{
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: cover; 
+
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--ylw);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    bottom: 0;
+
+}
+
+.footcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* book.html */
+
+#pdf-container {
+    width: 800px;
+    margin: auto;
+}
+
+#pdf-viewer {
+    width: 100%;
+    height: 850px;
+    border: none;
+}
+
+button {
+    margin: 10px;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    nav{
+        position: sticky;
+        top:10;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-left: 75%;
+
+    }
+    nav{
+        position: sticky;
+        top:10;
+    }
+    nav ul li a.hid{
+        display: contents;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+        background: var(--drkylw);
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.na{
+        background: none;
+        color: var(--blu);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .bookgrade{
+        margin-left: 20%;
+    }
+
+    .books {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; 
+        width: auto; 
+    }
+}
+
+
