@@ -264,6 +264,7 @@ button {
 
 @media (max-width: 510px){
     .main{
+        width: 510px;
         display: flex;
         flex-wrap: wrap;
         overflow-x: none; 
