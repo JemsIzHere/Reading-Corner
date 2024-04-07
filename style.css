@@ -266,7 +266,9 @@ button {
         width: auto; 
     }
     #pdf-container {
-        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow: hidden;
         margin: auto;
     }
 }
