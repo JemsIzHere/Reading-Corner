@@ -255,7 +255,6 @@ button {
     }
 
     .books {
-        width: 100vw;
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto; 
@@ -267,6 +266,10 @@ button {
     .main{
         display: flex;
         flex-wrap: wrap;
+        overflow-x: none; 
+    }
+    .books{
+        overflow-x: none; 
     }
 
 }
