@@ -204,6 +204,8 @@ button {
 }
 
 @media (max-width: 858px){
+
+
     nav{
         width: 100vw;
     }
@@ -263,6 +265,10 @@ button {
 }
 
 @media (max-width: 510px){
+    #pdf-container {
+        width: 510px;
+        margin: auto;
+    }
     .main{
         width: 510px;
         display: flex;
