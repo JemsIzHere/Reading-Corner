@@ -18,6 +18,7 @@
 body{
     background-color: var(--wht);
     font-family: "Andika", sans-serif;
+    height: 100vh;
 }
 
 /* Nav */
@@ -25,7 +26,7 @@ body{
 nav{
     background-color: var(--ylw);
     height: 80px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     padding: 0 50px;
     position: sticky;
@@ -136,12 +137,17 @@ a.na,a:hover{
     width: 250px; 
     height: 300px;
     margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .bookgrade .books .bookcont .bookact img{
-    max-width: 100%; 
-    max-height: 100%;
+    max-width: 250px; 
+    max-height: 300px;
     object-fit: cover; 
+    object-position: center;
 
 }
 
@@ -150,7 +156,7 @@ a.na,a:hover{
 footer{
     background-color: var(--ylw);
     height: 80px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
