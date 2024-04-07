@@ -20,6 +20,8 @@ body{
     font-family: "Andika", sans-serif;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Nav */
@@ -162,7 +164,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 0 50px;
-    bottom: 0;
+    margin-top: auto;
 
 }
 
@@ -186,9 +188,52 @@ footer{
     border: none;
 }
 
-button {
+/* about.html */
+
+.wrapper{
+    background-color: var(--wht);
+    width: 580px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+}
+
+.wrapper h2{
+    text-align: center;
+}
+
+.wrapper hr{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.wrapper .members{
+    display: flex;
+
+}
+
+.wrapper .members .team-mem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:8px;
+}
+
+.wrapper .members .team-mem img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin: 10px;
 }
+
+.wrapper .members .team-mem h4{
+    text-align: center;
+    margin: 7px;
+}
+
+
+
 
 @media (max-width: 952px){
     label.logo{
@@ -286,6 +331,16 @@ button {
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .wrapper{
+        width: 410px;
+    }
+
+    .wrapper .members {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
     }
 
 }
