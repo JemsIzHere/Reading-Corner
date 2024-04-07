@@ -245,11 +245,17 @@ button {
     #check:checked ~ ul{
         left: 0;
     }
+
+    .main{
+        margin-top: 2%;
+    }
+
     .bookgrade{
         margin-left: 10%;
     }
 
     .books {
+        width: 100vw;
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto; 
