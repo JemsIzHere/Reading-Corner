@@ -250,6 +250,9 @@ button {
 
     .main{
         margin-top: 2%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .bookgrade{
@@ -262,6 +265,10 @@ button {
         overflow-x: auto; 
         width: auto; 
     }
+    #pdf-container {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 510px){
@@ -270,13 +277,11 @@ button {
         margin: auto;
     }
     .main{
-        width: 510px;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow: hidden;
         display: flex;
         flex-wrap: wrap;
-        overflow-x: none; 
-    }
-    .books{
-        overflow-x: none; 
     }
 
 }
