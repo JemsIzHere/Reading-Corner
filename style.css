@@ -76,7 +76,7 @@ a.na,a:hover{
     color: var(--wht);
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 10%;
     cursor: pointer;
     display: none;
 }
@@ -199,7 +199,7 @@ button {
     }
     nav{
         position: sticky;
-        top:10;
+        top:0;
     }
 }
 
@@ -211,7 +211,7 @@ button {
     }
     nav{
         position: sticky;
-        top:10;
+        top:0;
     }
     nav ul li a.hid{
         display: contents;
@@ -245,12 +245,12 @@ button {
         margin-left: 20%;
     }
 
-    .books {
+    /* .books {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto; 
         width: auto; 
-    }
+    } */
 }
 
 
