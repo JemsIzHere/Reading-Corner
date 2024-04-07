@@ -115,6 +115,7 @@ a.na,a:hover{
 .main .bookgrade{
     margin-bottom: 10%;
     margin-right: 5%;
+
 }
 
 .main .bookgrade .books {
@@ -331,6 +332,10 @@ footer{
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .main .bookgrade{
+        width: 400px;
     }
 
     .wrapper{
