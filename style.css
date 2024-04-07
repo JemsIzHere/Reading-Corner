@@ -204,7 +204,9 @@ button {
 }
 
 @media (max-width: 858px){
-
+    .bannercont{
+        height: 50%;
+    }
 
     nav{
         width: 100vw;
