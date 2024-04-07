@@ -19,6 +19,7 @@ body{
     background-color: var(--wht);
     font-family: "Andika", sans-serif;
     height: 100vh;
+    width: 100vw;
 }
 
 /* Nav */
